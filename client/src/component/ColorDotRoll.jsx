@@ -148,7 +148,7 @@ class ColorDotRoll extends Component {
     const { classes } = this.props;
     return (
       <div>
-        <Stage width={600} height={this.state.hight + 25}>
+        <Stage width={600} height={80}>
           <Layer>
             {this.state.guess.map((gu, idx) => {
               return (
@@ -157,7 +157,7 @@ class ColorDotRoll extends Component {
                   key={idx}
                   radius={20}
                   x={50 + idx * 50}
-                  y={this.state.hight}
+                  y={20}
                   fill={colorPallet[gu]}
                 />
               );
@@ -170,7 +170,7 @@ class ColorDotRoll extends Component {
                     key={idx}
                     radius={10}
                     x={300 + idx * 30}
-                    y={this.state.hight}
+                    y={20}
                     fill={feedBackPallet[fb]}
                   />
                 );
